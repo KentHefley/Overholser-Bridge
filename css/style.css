@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700|Prata&display=swap");
+@media only screen and (min-width: 768px) {
+  .main {
+    text-align: left;
+    padding: 4em;
+  }
+  .main p {
+    line-height: 1.9em;
+  }
+  .main section {
+    -webkit-column-count: 2;
+            column-count: 2;
+    -webkit-column-rule-style: solid;
+            column-rule-style: solid;
+    -webkit-column-rule-color: #2b2b2b;
+            column-rule-color: #2b2b2b;
+  }
+  .main h1 {
+    font-size: 3rem;
+  }
+  .main article {
+    padding: 2em;
+    background: #181818;
+  }
+  .main h2 {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+  }
+  .main h2::before {
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 8px;
+    z-index: -1;
+    bottom: -0.3em;
+    left: -2em;
+    background: crimson;
+  }
+  .main .secondary {
+    margin-top: 2em;
+  }
+  .main img {
+    width: 100%;
+  }
+  .main p.span-all {
+    font-family: "prata", serif;
+    display: block;
+    -webkit-column-span: all;
+            column-span: all;
+    font-size: 2em;
+    padding: 0.5em;
+    margin-top: 2em;
+    color: #fff;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  main article {
+    margin: 0 auto;
+  }
+  main article .section {
+    -webkit-column-count: 3;
+            column-count: 3;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #0f0f0f;
+  color: #fff;
+}
+
+body h1,
+body h2,
+body h3 {
+  font-family: "Prata", serif;
+  margin: 1.3rem 0;
+}
+
+body p {
+  font-family: "Lato", sans-serif;
+  font-size: 1.1em;
+  line-height: 1.4;
+  margin-bottom: 1.3rem;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background: rgba(150, 25, 25, 0.26);
+  color: #fff;
+  min-height: 50vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero .video_bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+.hero .logo {
+  width: 50%;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero .logo {
+    width: 30%;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .hero .logo {
+    width: 20%;
+  }
+}
+
+main {
+  text-align: center;
+  padding: 1em;
+}
+
+section {
+  -webkit-column-count: 1;
+          column-count: 1;
+  -webkit-column-gap: 2em;
+          column-gap: 2em;
+}
+
+section img {
+  width: 80%;
+  margin: 1em 0;
+}
+
+.span-all {
+  display: none;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2em 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: crimson;
+  font-size: 1em;
+  font-family: "Lato", sans-serif;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer .year {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .year p {
+  font-size: 1em;
+  margin-right: 5px;
+}
+/*# sourceMappingURL=style.css.map */
